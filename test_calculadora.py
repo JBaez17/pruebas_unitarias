@@ -30,5 +30,8 @@ class Calculadora():
         #En consola el "." significa que la prueba paso, "F" significa que la prueba fallo
         return num1 + num2
 
+    def resta():
+        pass
+
 if __name__=='__main__':
     unittest.main()
