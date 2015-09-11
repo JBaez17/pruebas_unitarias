@@ -18,6 +18,10 @@ class Test(unittest.TestCase):
     def test_suma_de_5_mas_5(self):
         resultado = self.calc.suma(5,5)
         self.assertEqual(10, resultado)
+   
+    def test_resta_4_menos_3(self):
+        resultado = self.calc.resta(4,3)
+        self.assertEqual(1, resultado)
 
 
 class Calculadora():
