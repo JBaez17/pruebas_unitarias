@@ -1,4 +1,5 @@
 import unittest
+#from Calculadora import Calculadora
 
 class Test(unittest.TestCase):
 
@@ -23,6 +24,10 @@ class Test(unittest.TestCase):
         resultado = self.calc.resta(4,3)
         self.assertEqual(1, resultado)
 
+    def test_resta_8_menos_4(self):
+        resultado = self.calc.resta(8,4)
+        self.assertEqual(4, resultado)
+
 
 class Calculadora():
     #Se puede poner "pass" para indicar al compilador que esta correcto porque aun no lo implementas
@@ -31,7 +36,7 @@ class Calculadora():
         return num1 + num2
 
     def resta(self, num1, num2):
-        return 1
+        return num1 - num2
 
 if __name__=='__main__':
     unittest.main()
